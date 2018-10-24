@@ -1,10 +1,10 @@
 # Provider
 provider "google" {}
 
-module "hardended_vm" {
+module "vm" {
   // source  = "github.com/mycompany/my_terraform_module/"
-  source     = "../modules/compute/"
+  source     = "../../modules/compute/"
   gcpregion  = "europe-west2"
-  gcpproject = "tf-demo"
+  gcpproject = "tf-demo-np"
   name       = "my-awesome-app"
 }

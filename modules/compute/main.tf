@@ -1,6 +1,6 @@
 # Google compute instance
-resource "google_compute_instance" "web" {
-  name         = "demo"
+resource "google_compute_instance" "vm" {
+  name         = "${var.name}"
   project      = "${var.gcpproject}"
   machine_type = "n1-standard-1"
   zone         = "${var.gcpregion}-a"
